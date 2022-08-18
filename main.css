@@ -1,0 +1,94 @@
+.main{ 
+display: flex;
+justify-content: center;
+align-items: center;
+height: 88vh;
+border-radius: 10px;
+}
+
+
+
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2vw;
+    float:left;
+    height: 100%;
+    width: 10vw;
+
+}
+
+.box{
+    background-color: rgb(201, 201, 201);
+}
+
+.minibox{
+    width: 11vw;
+    height: 85%;
+    padding: 0.3vh 0.5vw;
+
+
+}
+
+.bigbox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+
+}
+
+
+.bigbox p{
+    margin-top: -0.5vh;
+    
+
+}
+
+.topview{
+    display: flex;
+    justify-content: space-between;
+    height: 42%;
+    width: 100%;
+
+
+}
+
+.bottomview{
+    display: flex;
+    align-items: flex-end;
+    height: 55%;
+    padding: 0vh 1vw;
+    background-color: rgb(201, 201, 201);
+
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    justify-content: space-between;
+    width: 40vw;
+    height: 100%;
+
+
+}
+
+.reviewtype{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.graph{
+    display: flex;
+    height: 60%;
+    width: 80%;
+    align-self: center;
+    background-color: rgb(129, 129, 129);
+
+}

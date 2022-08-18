@@ -4,17 +4,16 @@
 class Aside extends React.Component {
     render(){
         return (
-        <div>
-            <nav>
+            <div class = 'nav box'>
                 <a>Dashboard</a>
                 <a> Widget</a>
                 <a> Reviews</a>
                 <a> Customers</a>
                 <a> Online Analysis</a>
                 <a> Setting</a>
-            </nav>
+            </div>
 
-        </div>
+
         )
     }
 }
@@ -23,7 +22,10 @@ class Aside extends React.Component {
 class Reviews extends React.Component{
     render () {
         return (
-            <div> Reviews <br> 1,281</br></div>
+            <div class = 'minibox box'> 
+            <p>Reviews </p>
+            <h1>1,281 </h1>
+             </div>
         )
     }
 }
@@ -31,40 +33,78 @@ class Reviews extends React.Component{
 class Average extends React.Component{
     render () {
         return (
-            <div> Average rating <br>4.6</br> </div>
+            <div class = 'minibox box'>
+                 <p>Average rating </p>
+                 <h1>4.6 </h1> 
+            </div>
+           
         )
     }
 }
 
 class Sentiment extends React.Component {
     render(){
-        return <div>Sentiment Analysis</div>
+        return (
+            <div class = 'minibox box'>
+                 <p>Sentiment Analysis </p>
+
+                <div class = 'reviewtype'>
+
+                <h1>960</h1>
+                <h1>122</h1>
+                <h1>321</h1>
+
+                </div>
+                
+            </div>
+
+        )
     }
 }
 
 class Webvisitors extends React.Component {
     render(){
-        return <div>Website Visitors <div>821</div>
+        return ( 
+        <div class = 'bigbox box'>
+            <p>Website Visitors </p>
+            <h1>821</h1>
+
+
+            <div class = 'graph'>
+            </div>
 
         </div>
+        )
     }
 }
 
-class App extends React.Component{
+class App extends React.Component {
     render () {
-        return(
-            <div>
+        return (
+
+       <div class ='main'>
+               
                 <Aside />
+              
+
+            <div class = 'right'>
+                <div class = 'topview'>  
                 <Reviews />
                 <Average />
                 <Sentiment />
-                <Webvisitors />
-            </div>
+                </div>
+
+                 <div class = 'bottomview'>
+                 <Webvisitors />
+                 </div>
+             </div>
+
+       </div>
         )
     }
 }
 
 ReactDOM.render(
     <App />,
-    document.querySelector('main')
+    document.querySelector('.container')
   )
