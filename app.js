@@ -4,7 +4,7 @@
 class Aside extends React.Component {
     render(){
         return (
-        <aside>
+        <div>
             <nav>
                 <a>Dashboard</a>
                 <a> Widget</a>
@@ -14,7 +14,7 @@ class Aside extends React.Component {
                 <a> Setting</a>
             </nav>
 
-        </aside>
+        </div>
         )
     }
 }
@@ -23,7 +23,7 @@ class Aside extends React.Component {
 class Reviews extends React.Component{
     render () {
         return (
-            <section> Reviews 1,281</section>
+            <div> Reviews <br> 1,281</br></div>
         )
     }
 }
@@ -31,38 +31,34 @@ class Reviews extends React.Component{
 class Average extends React.Component{
     render () {
         return (
-            <section> Average rating 4.6</section>
+            <div> Average rating <br>4.6</br> </div>
         )
     }
 }
 
 class Sentiment extends React.Component {
     render(){
-        return <section>Sentiment Analysis</section>
+        return <div>Sentiment Analysis</div>
     }
 }
 
 class Webvisitors extends React.Component {
     render(){
-        return <section id = "large">Website Visitors <div>821</div>
+        return <div>Website Visitors <div>821</div>
 
-        </section>
+        </div>
     }
 }
 
 class App extends React.Component{
     render () {
         return(
-            <div id = "app">
+            <div>
                 <Aside />
-                <div id = 'container'>
-                <div id = "top">
                 <Reviews />
                 <Average />
                 <Sentiment />
-                </div>
                 <Webvisitors />
-                </div>
             </div>
         )
     }
